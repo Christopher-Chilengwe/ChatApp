@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="chat_quickshare.tabwithviewpager">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="chat_quickshare.tabwithviewpager.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="chat_quickshare.tabwithviewpager.ViewPager.TabWithIconActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+      <!--  <activity android:name=".VerifyMobileActivity"></activity>-->
+        <activity android:name="chat_quickshare.tabwithviewpager.ViewPager.TabWOIconActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="chat_quickshare.tabwithviewpager.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="chat_quickshare.tabwithviewpager.ContactsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="chat_quickshare.tabwithviewpager.ContactSaveActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="chat_quickshare.tabwithviewpager.ContactListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="chat_quickshare.tabwithviewpager.ChatActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/NoActionBar"
+        android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="chat_quickshare.tabwithviewpager.audiorecod.VoiceRecordingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="chat_quickshare.tabwithviewpager.VerifyMobileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name="chat_quickshare.model.My_Service" android:enabled="true"
+            android:process=":conditional"
+            >
+        </service>
+
+        <!-- Firebase Notifications -->
+        <service android:name=".notifi.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".notifi.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+    </application>
+
+</manifest>

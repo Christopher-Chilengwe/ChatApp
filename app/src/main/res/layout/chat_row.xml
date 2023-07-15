@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="#c4c4c4">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:gravity="center|left"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtBuddy"
+            android:textColor="#fff"
+            android:visibility="gone"
+            android:background="@drawable/out_message_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.beardedhen.androidbootstrap.BootstrapThumbnail
+            android:id="@+id/postfrnd"
+            android:layout_margin="10dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+android:visibility="gone"
+            app:bootstrapBrand="info"
+            app:hasBorder="true"
+            />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:gravity="center|right"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtYour"
+            android:textColor="#fff"
+            android:visibility="gone"
+            android:background="@drawable/in_message_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <com.beardedhen.androidbootstrap.BootstrapThumbnail
+        android:id="@+id/postimgme"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone"
+
+        app:bootstrapBrand="info"
+        app:hasBorder="true"
+        />
+    <!--<VideoView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:id="@+id/videoply" />-->
+
+
+    <VideoView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+android:layout_margin="10dp"
+        android:visibility="gone"
+        android:id="@+id/videoply" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/imageViewPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_play"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:tint="@android:color/darker_gray"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground"
+                />
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            >
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+    </LinearLayout>
+
+
+
