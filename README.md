@@ -2,7 +2,7 @@
 # Chat App
 
 ## Overview
-The Chat app is a platform designed to connect individuals and foster social interactions online. It provides a range of features to enhance user engagement and facilitate communication within the platform.
+The Chat App is a platform designed to connect individuals and foster social interactions online. It provides a range of features to enhance user engagement and facilitate communication within the platform.
 
 ## Key Features
 1. User Profiles: Users can create personalized profiles with relevant information, such as name, bio, profile picture, and interests. This allows users to express their individuality and connect with others who share similar interests.
